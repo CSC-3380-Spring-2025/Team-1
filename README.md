@@ -1,10 +1,10 @@
-# [Name of the Project] : [Team Number]
+# [Escape the Experiment] : [Team #1]
 # Members
-Project Manager: [Name] ([GitHub Name])\
-Communications Lead: [Name] ([GitHub Name])\
-Git Master: [Name] ([GitHub Name])\
-Design Lead: [Name] ([GitHub Name])\
-Quality Assurance Tester: [Name] ([GitHub Name])
+Project Manager: [Rachel Kashimawo] ([TechValkyrie])\
+Communications Lead: [Niya DeCuir] ([princesspeachiscoding])\
+Git Master: [Clark Ridenhour] ([criden])\
+Design Lead: [Gracielle Perez] ([GraciellePerez])\
+Quality Assurance Tester: [Samone Stanley] ([samone-crtl])\
 
 # About Our Software
 

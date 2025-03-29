@@ -1,39 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerInteraction : MonoBehaviour
 {
-   public float interactionDistance = 3f; // How far the player can interact
+    public float interactionDistance = 3f; 
     private Camera playerCamera;
     private Inventory inventory;
 
     void Start()
     {
         playerCamera = Camera.main;
-        inventory = GetComponent<Inventory>(); // Get the Inventory component on the player
+        inventory = GetComponent<Inventory>(); 
     }
 
     void Update()
     {
-        CheckForInteractable();
+        if (Input.GetKeyDown(KeyCode.E))
+            TryInteract();
+
+        if (Input.GetKeyDown(KeyCode.I))
+            inventory.ToggleInventory();
     }
 
-    void CheckForInteractable()
+    private void TryInteract()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, interactionDistance))
-        {
-            InteractableObject interactable = hit.collider.GetComponent<InteractableObject>();
-            if (interactable != null)
-            {
-                Debug.Log("Press 'E' to interact with " + hit.collider.name);
+        if (!Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out RaycastHit hit, interactionDistance))
+            return;
 
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    interactable.Interact(inventory);
-                }
-            }
-        }
+        InteractableObject interactable = hit.collider.GetComponent<InteractableObject>();
+        if (interactable != null)
+            interactable.Interact(inventory);
     }
 }

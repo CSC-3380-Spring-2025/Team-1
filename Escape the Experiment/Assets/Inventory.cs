@@ -1,10 +1,10 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public List<string> items = new List<string>();
+     public List<string> items = new List<string>();
     private Dictionary<string, GameObject> itemPrefabs = new Dictionary<string, GameObject>();
 
     public GameObject inventoryUI; 

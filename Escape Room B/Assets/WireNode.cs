@@ -15,7 +15,6 @@ public class WireNode : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
 
-        // Create a unique instance of the material
         uniqueMaterial = new Material(rend.material);
         rend.material = uniqueMaterial;
     }
@@ -27,12 +26,15 @@ public class WireNode : MonoBehaviour
 
     public void Deselect()
     {
-        rend.material.color = Color.white;   // Or set this back to your default color
+        rend.material.color = Color.white;   
     }
 
     public void Connect()
     {
         isConnected = true;
-        rend.material.color = Color.green;   // Connected color
+
+        rend.material.color = Color.green;
+        rend.material.EnableKeyword("_EMISSION");
+        rend.material.SetColor("_EmissionColor", Color.green * 2f);
     }
 }

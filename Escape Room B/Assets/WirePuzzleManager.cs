@@ -9,6 +9,8 @@ public class WirePuzzleManager : MonoBehaviour
     public WireNode selectedNode = null;
     public List<WireNode> nodes;
     public GameObject monitorsToActivate;
+    public GameObject wireConnectionPrefab;  
+    public Color connectedWireColor = Color.green;
 
     void Awake()
     {
@@ -20,13 +22,15 @@ public class WirePuzzleManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Left mouse click
+        if (Input.GetMouseButtonDown(0))  
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, 100f))  
             {
+                Debug.Log("Hit: " + hit.collider.name); 
+
                 WireNode node = hit.collider.GetComponent<WireNode>();
 
                 if (node != null)
@@ -34,13 +38,17 @@ public class WirePuzzleManager : MonoBehaviour
                     OnNodeClicked(node);
                 }
             }
+            else
+            {
+                Debug.Log("Raycast missed!");
+            }
         }
     }
 
     public void OnNodeClicked(WireNode node)
     {
         if (selectedNode == null)
-        {
+        {   
             selectedNode = node;
             selectedNode.Select();
         }
@@ -50,6 +58,23 @@ public class WirePuzzleManager : MonoBehaviour
             {
                 selectedNode.Connect();
                 node.Connect();
+
+                // Create wire connection visual
+                GameObject wireObj = new GameObject("WireConnection");
+
+                // Parent the wire object under a container for organization
+                GameObject container = GameObject.Find("WireConnections");
+                if (container != null)
+                {
+                    wireObj.transform.parent = container.transform;
+                }
+
+                // Add WireConnection script and draw the wire
+                WireConnection connection = wireObj.AddComponent<WireConnection>();
+                connection.DrawConnection(selectedNode.transform.position, node.transform.position, connectedWireColor);
+
+                // Add glow effect (optional)
+                connection.SetGlow(connectedWireColor);
             }
             else
             {
@@ -65,7 +90,7 @@ public class WirePuzzleManager : MonoBehaviour
 
     void CheckPuzzleComplete()
     {
-        foreach (WireNode node in nodes)
+       foreach (WireNode node in nodes)
         {
             if (!node.isConnected)
                 return;
@@ -76,6 +101,9 @@ public class WirePuzzleManager : MonoBehaviour
         if (monitorsToActivate != null)
             monitorsToActivate.SetActive(true);
 
-        // You can also add closing the puzzle automatically here if you want
+        FindObjectOfType<PlayerController>().enabled = true;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }

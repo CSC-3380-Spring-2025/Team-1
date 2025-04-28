@@ -1,6 +1,5 @@
-using System.Collections;
 using UnityEngine;
-using NavKeypad;
+using NavKeypad;   // make sure this matches your namespace
 
 public class KeypadFPV : MonoBehaviour
 {
@@ -10,14 +9,16 @@ public class KeypadFPV : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Left mouse button clicked
+        if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                if (hit.collider.TryGetComponent(out KeypadButton keypadButton))
+                // 1) Look for KeypadButtons (plural)
+                if (hit.collider.TryGetComponent<KeypadButtons>(out var btn))
                 {
-                    keypadButton.PressButton();
+                    // 2) Call PressButton() (singular)
+                    btn.PressButton();
                 }
             }
         }

@@ -5,6 +5,9 @@ using UnityEngine.Events;
 
 public class Keypad : MonoBehaviour
 {
+    // Singleton instance
+    public static Keypad Instance { get; private set; }
+
     [Header("Events")]
     [SerializeField] private UnityEvent onAccessGranted;
     [SerializeField] private UnityEvent onAccessDenied;
@@ -13,7 +16,7 @@ public class Keypad : MonoBehaviour
     [SerializeField] private int keypadCombo = 12345;
 
     [Header("Display and Colors")]
-    [SerializeField] private TMP_Text keypadDisplayText;
+    [SerializeField] private TMP_Text keypadDisplayText;  
     [SerializeField] private Renderer panelMesh;
 
     private string currentInput;
@@ -21,6 +24,8 @@ public class Keypad : MonoBehaviour
 
     private void Awake()
     {
+        // Initialize singleton
+        Instance = this;
         ClearInput();
     }
 
@@ -37,7 +42,15 @@ public class Keypad : MonoBehaviour
             if (currentInput.Length < 9)
             {
                 currentInput += input;
-                keypadDisplayText.text = currentInput;
+
+                if (keypadDisplayText != null)
+                {
+                    keypadDisplayText.text = currentInput;
+                }
+                else
+                {
+                    Debug.LogError("keypadDisplayText is not assigned!");
+                }
             }
         }
     }
@@ -61,7 +74,7 @@ public class Keypad : MonoBehaviour
         else
             AccessDenied();
 
-        yield return new WaitForSeconds(1f); // Wait before clearing input
+        yield return new WaitForSeconds(1f); 
         displayingResult = false;
 
         ClearInput();
@@ -69,20 +82,33 @@ public class Keypad : MonoBehaviour
 
     private void AccessDenied()
     {
-        keypadDisplayText.text = "Denied";
+        if (keypadDisplayText != null)
+        {
+            keypadDisplayText.text = "Denied";
+        }
         onAccessDenied?.Invoke();
     }
 
     private void ClearInput()
     {
         currentInput = "";
-        keypadDisplayText.text = currentInput;
+
+        if (keypadDisplayText != null)
+        {
+            keypadDisplayText.text = currentInput;
+        }
+        else
+        {
+            Debug.LogError("keypadDisplayText is not assigned!");
+        }
     }
 
     private void AccessGranted()
     {
-        keypadDisplayText.text = "Granted";
+        if (keypadDisplayText != null)
+        {
+            keypadDisplayText.text = "Granted";
+        }
         onAccessGranted?.Invoke();
     }
 }
-

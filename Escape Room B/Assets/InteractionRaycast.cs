@@ -13,6 +13,7 @@ public class InteractionRaycast : MonoBehaviour
 
     void Update()
     {
+        Debug.DrawRay(transform.position, transform.forward * 50f, Color.red);
         HandleInteractionCheck();
         HandleInteractInput();
     }
@@ -22,12 +23,18 @@ public class InteractionRaycast : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, rayDistance, interactableLayer))
+        Debug.DrawRay(ray.origin, ray.direction * 50f, Color.red);  // BIG red line for testing
+
+        if (Physics.Raycast(ray, out hit, rayDistance))   // Remove layer mask for now
         {
             currentInteractable = hit.collider.GetComponent<IInteractable>();
 
-            if (currentInteractable != null && interactHintUI != null)
-                interactHintUI.SetActive(true);
+            if (currentInteractable != null)
+            {
+                Debug.Log("Looking at: " + hit.collider.name);
+                if (interactHintUI != null)
+                    interactHintUI.SetActive(true);
+            }
         }
         else
         {
@@ -36,13 +43,13 @@ public class InteractionRaycast : MonoBehaviour
             if (interactHintUI != null)
                 interactHintUI.SetActive(false);
         }
-    }
-
-    void HandleInteractInput()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
-        {
-            currentInteractable.Interact();
         }
-    }
+
+        void HandleInteractInput()
+        {
+            if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
+            {
+                currentInteractable.Interact();
+            }
+        }
 }

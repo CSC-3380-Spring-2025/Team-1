@@ -1365,7 +1365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457248, guid: e74e546c0dc2e68429a1bdd74b45709e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.168
+      value: -1.415
       objectReference: {fileID: 0}
     - target: {fileID: 457248, guid: e74e546c0dc2e68429a1bdd74b45709e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2854,6 +2854,161 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: facf14ae9ce68b7479827bcf72fba835, type: 3}
+--- !u!1001 &797983421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4939112232282809330, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143732, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_Text
+      value: One awaits without a quest. its value shines alone. Shelved minds in
+        silent rows reveal the next to own.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143732, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.893323
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.12035054
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 20.278418
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 5.1540365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.76133
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7438939
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -10.139725
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.5770397
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814601, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_Name
+      value: StickyNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814606, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: Title
+      value: One awaits without a quest. its value shines alone. Shelved minds in
+        silent rows reveal the next to own
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814606, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 774156764}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112233408707545, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112233465246867, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112233662231284, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 774156764}
+    - target: {fileID: 4939112233662231287, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d96f8964a2076545bb6dd134354904f, type: 3}
 --- !u!1001 &822512969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3030,6 +3185,158 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1256623806}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &861193776
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4939112232282809330, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143732, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_Text
+      value: " Pulses on the screen in dot-and-dash will guide you true. And on the
+        wall one date\u2019s embrace will finish up the cue."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143732, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.893323
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.12035054
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 20.278418
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 5.1540365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.76133
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7438939
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -10.139725
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.5770397
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814601, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_Name
+      value: StickyNote (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814606, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: Title
+      value: "One awaits without a quest\u2014its value shines alone. Shelved minds
+        in silent rows reveal the next to own. Pulses on the screen in dot-and-dash
+        will guide you true. And on the wall one date\u2019s embrace will finish
+        up the cue."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814606, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 774156764}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112232788814607, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112233408707545, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112233465246867, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939112233662231284, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 774156764}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d96f8964a2076545bb6dd134354904f, type: 3}
 --- !u!1001 &873063374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3956,7 +4263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 488980, guid: 92794c55695387544b0181380f46d6ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.142
+      value: -1.315
       objectReference: {fileID: 0}
     - target: {fileID: 488980, guid: 92794c55695387544b0181380f46d6ec, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3964,7 +4271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 488980, guid: 92794c55695387544b0181380f46d6ec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.099
+      value: -3.006
       objectReference: {fileID: 0}
     - target: {fileID: 488980, guid: 92794c55695387544b0181380f46d6ec, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5828,7 +6135,6 @@ Transform:
   - {fileID: 1514113003}
   - {fileID: 284212468}
   - {fileID: 926288037}
-  - {fileID: 1962956264}
   - {fileID: 1337980601}
   - {fileID: 1763812103}
   - {fileID: 157410768}
@@ -7057,6 +7363,74 @@ MonoBehaviour:
   value: 2
   buttonSpeed: 0.1
   moveDistance: 0.0025
+--- !u!1001 &1943527740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9274678
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2982086
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9134173
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842856202905805191, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511693165053033277, guid: 51c2255d1df6126418b881e0edaa57ac,
+        type: 3}
+      propertyPath: m_Name
+      value: Computer1 Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51c2255d1df6126418b881e0edaa57ac, type: 3}
 --- !u!1001 &1962704924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7106,58 +7480,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79646652f63865f4185986c750a93b72, type: 3}
---- !u!1001 &1962956263
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1763582864}
-    m_Modifications:
-    - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
-      propertyPath: m_RootOrder
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.699
-      objectReference: {fileID: 0}
-    - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.048
-      objectReference: {fileID: 0}
-    - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.577
-      objectReference: {fileID: 0}
-    - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9756935
-      objectReference: {fileID: 0}
-    - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.21913996
-      objectReference: {fileID: 0}
-    - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6446162, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
---- !u!4 &1962956264 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744,
-    type: 3}
-  m_PrefabInstance: {fileID: 1962956263}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1962959905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7708,3 +8030,6 @@ SceneRoots:
   - {fileID: 668050224}
   - {fileID: 1896810745}
   - {fileID: 523512203}
+  - {fileID: 797983421}
+  - {fileID: 861193776}
+  - {fileID: 1943527740}

@@ -2453,8 +2453,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0e045fe39d7574dae57dfd40d37b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonName: 
-  puzzleManager: {fileID: 0}
+  buttonName: Butt1
+  puzzleManager: {fileID: 407640088}
   pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!135 &705395749
 SphereCollider:
@@ -4081,7 +4081,7 @@ Transform:
   m_GameObject: {fileID: 991406824}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.6987546, w: 0.7153615}
-  m_LocalPosition: {x: -9.159, y: 7.395, z: -7.735}
+  m_LocalPosition: {x: -9.159, y: 7.395, z: -7.734}
   m_LocalScale: {x: 0.0359516, y: 0.098437995, z: 0.063648045}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4404,7 +4404,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0f9c69d31ad009f4482c29c6d30c92d4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.3747263
+      value: 7.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0f9c69d31ad009f4482c29c6d30c92d4,
         type: 3}
@@ -5249,7 +5249,7 @@ Transform:
   m_GameObject: {fileID: 1253795525}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.157, y: 7.42, z: -7.943}
+  m_LocalPosition: {x: -9.157, y: 7.42, z: -7.939}
   m_LocalScale: {x: 0.098439, y: 0.098439, z: 0.098439}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7929,7 +7929,7 @@ Transform:
   m_GameObject: {fileID: 1809957675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

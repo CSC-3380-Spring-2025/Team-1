@@ -15,7 +15,6 @@ public class PodiumInteract : MonoBehaviour, IInteractable
             GameObject crystal = CrystalManager.Instance.heldCrystal;
             placedCrystal = crystal;
 
-            // Place crystal on podium
             crystal.transform.SetParent(null);
             crystal.transform.position = placementPoint.position;
             crystal.transform.rotation = placementPoint.rotation;
@@ -24,7 +23,6 @@ public class PodiumInteract : MonoBehaviour, IInteractable
 
             Debug.Log("Placed " + crystal.name + " on " + gameObject.name);
 
-            // Check if placed correctly
             CrystalManager.Instance.CheckPuzzleCompletion();
         }
     }

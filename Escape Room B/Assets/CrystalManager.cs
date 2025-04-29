@@ -6,10 +6,10 @@ public class CrystalManager : MonoBehaviour
 {
     public static CrystalManager Instance;
 
-    public Transform holdPoint;            // Where crystal is held
+    public Transform holdPoint;           
     public GameObject heldCrystal = null;
     public PodiumInteract[] podiums;
-    public GameObject keypadNumbers;       // To activate when solved
+    public GameObject keypadNumbers;      
 
     void Awake()
     {

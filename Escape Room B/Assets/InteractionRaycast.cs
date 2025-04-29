@@ -8,7 +8,6 @@ public class InteractionRaycast : MonoBehaviour
     public LayerMask interactableLayer;
     private IInteractable currentInteractable;
 
-    // Optional: Show UI hint (like "Press E to Interact")
     public GameObject interactHintUI;
 
     void Update()
@@ -23,9 +22,9 @@ public class InteractionRaycast : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        Debug.DrawRay(ray.origin, ray.direction * 50f, Color.red);  // BIG red line for testing
+        Debug.DrawRay(ray.origin, ray.direction * 50f, Color.red);  
 
-        if (Physics.Raycast(ray, out hit, rayDistance))   // Remove layer mask for now
+        if (Physics.Raycast(ray, out hit, rayDistance)) 
         {
             currentInteractable = hit.collider.GetComponent<IInteractable>();
 

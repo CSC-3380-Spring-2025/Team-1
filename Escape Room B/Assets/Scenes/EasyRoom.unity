@@ -187,6 +187,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4939112232634143732, guid: 5d96f8964a2076545bb6dd134354904f,
+        type: 3}
+      propertyPath: m_Text
+      value: ' Clue #4  Mass recorded: 834.3g. Just the digits will do.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4939112232634143735, guid: 5d96f8964a2076545bb6dd134354904f,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -215,7 +220,7 @@ PrefabInstance:
     - target: {fileID: 4939112232788814606, guid: 5d96f8964a2076545bb6dd134354904f,
         type: 3}
       propertyPath: Title
-      value: Clue #4
+      value: ' Clue #4  Mass recorded: 834.3g. Just the digits will do.'
       objectReference: {fileID: 0}
     - target: {fileID: 4939112232788814606, guid: 5d96f8964a2076545bb6dd134354904f,
         type: 3}
@@ -765,7 +770,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 44fed6aff454809469effaac1a0b86ed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.741
+      value: 0.734
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44fed6aff454809469effaac1a0b86ed,
         type: 3}
@@ -7408,7 +7413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -227.63501, y: -15.537155}
+  m_AnchoredPosition: {x: -227.63501, y: -15.53717}
   m_SizeDelta: {x: -455.2699, y: -31.0743}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868780899

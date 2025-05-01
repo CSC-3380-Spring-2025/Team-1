@@ -5683,6 +5683,7 @@ MonoBehaviour:
   resultText: {fileID: 1883370891}
   chemistryTableUI: {fileID: 1868780897}
   stickyNote: {fileID: 1109313094}
+  playerController: {fileID: 859429861}
 --- !u!1001 &1368100122
 PrefabInstance:
   m_ObjectHideFlags: 0

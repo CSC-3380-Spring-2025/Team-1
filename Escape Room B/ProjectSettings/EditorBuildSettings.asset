@@ -8,4 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Sticky Notes/StickyNotes/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 65ae4800939ca9b4c913f91821d1046f
+  - enabled: 1
+    path: Assets/Scenes/EasyRoom.unity
+    guid: 358d7265aaccbb441bebdc570f322b34
+  - enabled: 1
+    path: Assets/Scenes/HardRoom.unity
+    guid: e005939a765c7bb42912df21417ec1cc
+  - enabled: 1
+    path: Assets/Scenes/MedRoom.unity
+    guid: 8d93e6b177a4d3e49a431c8e05f5e8d4
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 7d4ff47953bf36b4caa74919c09ff540
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 76f352ffb480ede459fd783091df660d
   m_configObjects: {}

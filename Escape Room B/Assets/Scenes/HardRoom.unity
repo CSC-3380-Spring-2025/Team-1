@@ -5035,10 +5035,8 @@ PrefabInstance:
     - target: {fileID: 4939112232634143732, guid: 5d96f8964a2076545bb6dd134354904f,
         type: 3}
       propertyPath: m_Text
-      value: "One awaits without a quest. its value shines alone.\nShelved minds
-        in silent rows reveal the next to own.\nThree lights pulse on the tower\u2019s
-        front to guide you true.\nAnd on the wall one date\u2019s embrace will finish
-        up the cue."
+      value: One awaits without a quest. its value shines alone. Shelved minds in
+        silent rows reveal the next to own
       objectReference: {fileID: 0}
     - target: {fileID: 4939112232634143732, guid: 5d96f8964a2076545bb6dd134354904f,
         type: 3}
@@ -5187,7 +5185,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4939112232467650463, guid: 5d96f8964a2076545bb6dd134354904f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d96f8964a2076545bb6dd134354904f, type: 3}

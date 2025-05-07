@@ -3462,7 +3462,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752477740}
   m_LocalRotation: {x: -0.011386185, y: 0.99748814, z: -0.052882154, w: 0.045731775}
-  m_LocalPosition: {x: 0, y: 0, z: 74.99926}
+  m_LocalPosition: {x: 0, y: 0, z: 67}
   m_LocalScale: {x: 15.728193, y: 13.333343, z: 15.729506}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3470,7 +3470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 5.996, y: 174.667, z: -1.587}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1092, y: 95}
+  m_AnchoredPosition: {x: 1049, y: 26}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752477742
@@ -7819,9 +7819,7 @@ MonoBehaviour:
   - {fileID: 428241875}
   - {fileID: 1152356423}
   - {fileID: 1768667013}
-  keypadHintUI: {fileID: 0}
-  codeText: {fileID: 0}
-  codeToShow: 3452
+  objectToActivate: {fileID: 2031481010}
 --- !u!1 &1514724169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7479655408705745758, guid: b47bdf1669865c841ace96330ee3d7ec,

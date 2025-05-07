@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ButtonPuzzleManager : MonoBehaviour
 {
-      public List<string> correctSequence = new List<string> { "Button1", "Button2", "Button3" };
+    public List<string> correctSequence = new List<string> { "Button1", "Button2", "Button3" };
     private List<string> playerInput = new List<string>();
 
-    public GameObject monitorsToActivate;   // This is your ScreenManager GameObject
+    public GameObject monitorsToActivate;
+    public List<ButtonInteract> allButtons;  // Assign all buttons in Inspector
 
     public void RegisterButtonPress(string buttonName)
     {
@@ -19,13 +20,15 @@ public class ButtonPuzzleManager : MonoBehaviour
             if (IsCorrectSequence())
             {
                 Debug.Log("Puzzle Complete! Monitors Activated!");
+                FlashAllButtons(Color.green); // If correct it will flash green 
 
                 if (monitorsToActivate != null)
-                    monitorsToActivate.SetActive(true);   // Show ScreenManager
+                    monitorsToActivate.SetActive(true);
             }
             else
             {
                 Debug.Log("Wrong Sequence! Try Again.");
+                FlashAllButtons(Color.red); // If wrong it will flash red
                 playerInput.Clear();
             }
         }
@@ -39,5 +42,13 @@ public class ButtonPuzzleManager : MonoBehaviour
                 return false;
         }
         return true;
+    }
+
+    private void FlashAllButtons(Color flashColor)
+    {
+        foreach (ButtonInteract btn in allButtons)
+        {
+            btn.FlashColor(flashColor);
+        }
     }
 }

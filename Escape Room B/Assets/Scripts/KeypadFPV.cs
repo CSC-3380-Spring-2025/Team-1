@@ -1,23 +1,28 @@
 using UnityEngine;
-using NavKeypad;   // make sure this matches your namespace
+using NavKeypad;  
 
+//the code that came with the keypad asset pack called this keypad FPV so when i wrote our own version, i kept the same name, however it is diffent code. all KeypadFPV scripts from the asset pack have been removed from player
 public class KeypadFPV : MonoBehaviour
 {
     private Camera cam;
 
-    private void Awake() => cam = Camera.main;
+     private void Awake() 
+    {
+        // sets main camera
+        cam = Camera.main;
+    }
 
+    
     private void Update()
     {
+        //when left mouse button is clicked
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                // 1) Look for KeypadButtons (plural)
                 if (hit.collider.TryGetComponent<KeypadButtons>(out var btn))
                 {
-                    // 2) Call PressButton() (singular)
                     btn.PressButton();
                 }
             }

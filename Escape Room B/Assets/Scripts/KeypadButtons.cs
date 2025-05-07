@@ -5,21 +5,21 @@ using NavKeypad;
 public class KeypadButtons : MonoBehaviour
 {
     [Header("Value")]
-    [SerializeField] private string value;         // The value (number or symbol) this button represents.
+    //sets the buttons value. should only go 0-9 and enter
+    [SerializeField] private string value;   
 
     [Header("Animation Settings")]
-    [SerializeField] private float buttonSpeed = 0.1f;   // Speed of the button animation.
-    [SerializeField] private float moveDistance = 0.0025f; // How far the button moves when pressed.
+    [SerializeField] private float buttonSpeed = 0.1f;   
+    [SerializeField] private float moveDistance = 0.0025f; 
+    private bool moving; 
 
-    private bool moving; // To prevent the button from being pressed multiple times while animating.
-
-    // Called when the button is pressed.
+    //allows for the buttons to be pressed
     public void PressButton()
     {
         var kp = Keypad.Instance;
         if (kp == null)
         {
-            Debug.LogError($"[KeypadButtons] No Keypad.Instance! Did you forget to put the Keypad script on a GameObject in the scene?");
+            Debug.LogError($"No keypad instance");
             return;
         }
 
@@ -31,7 +31,7 @@ public class KeypadButtons : MonoBehaviour
         }
     }
 
-    // Smooth button press animation.
+    //moves the button in and back out
     private IEnumerator MoveSmooth()
     {
         moving = true;

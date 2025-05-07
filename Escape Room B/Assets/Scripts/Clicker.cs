@@ -3,29 +3,25 @@ using UnityEngine.EventSystems;
 
 public class Clicker : MonoBehaviour
 {
-    private Camera mainCamera; // Camera reference
-    private Vector2 lastPosition; // To avoid unnecessary raycasting every frame
-
+    private Camera mainCamera; 
+    private Vector2 lastPosition; 
+    //sets main camera as our camera
     void Start()
     {
-        // Find the main camera in the scene automatically
         mainCamera = Camera.main;
     }
 
     void Update()
     {
-        // Cast a ray from the camera through the center of the screen
+        //Makes the clicker button in the center of the screen (was supposed to be a crosshair like in minecraft but i was out voted)
         Vector3 rayPosition = new Vector3(Screen.width / 2, Screen.height / 2, 0);
         Ray ray = mainCamera.ScreenPointToRay(rayPosition);
         RaycastHit hit;
-
-        // If the raycast hits something (UI element), simulate the click
+        //allows objects to be clickable through the dot in the middle of the screen
         if (Physics.Raycast(ray, out hit))
         {
-            // Check if the raycast hit a UI element
             if (hit.collider != null)
             {
-                // Use the EventSystem to trigger a click on the UI element
                 PointerEventData pointerData = new PointerEventData(EventSystem.current);
                 ExecuteEvents.Execute(hit.collider.gameObject, pointerData, ExecuteEvents.pointerClickHandler);
             }

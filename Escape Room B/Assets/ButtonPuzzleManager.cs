@@ -4,40 +4,59 @@ using UnityEngine;
 
 public class ButtonPuzzleManager : MonoBehaviour
 {
-      public List<string> correctSequence = new List<string> { "Button1", "Button2", "Button3" };
-    private List<string> playerInput = new List<string>();
+    public List<string> correctSequence = new List<string> { "Button1", "Button2", "Button3", "Button4" };
+    private List<ButtonInteract> pressedButtons = new List<ButtonInteract>();
 
-    public GameObject monitorsToActivate;   // This is your ScreenManager GameObject
+    public GameObject monitorsToActivate;
 
-    public void RegisterButtonPress(string buttonName)
+    public void RegisterButtonPress(ButtonInteract button)
     {
-        playerInput.Add(buttonName);
-        Debug.Log("Pressed: " + buttonName);
+        // Only allow one press per button
+        if (pressedButtons.Contains(button)) return;
 
-        if (playerInput.Count == correctSequence.Count)
+        button.SetColor(Color.yellow);
+        pressedButtons.Add(button);
+
+        if (pressedButtons.Count == correctSequence.Count)
         {
-            if (IsCorrectSequence())
-            {
-                Debug.Log("Puzzle Complete! Monitors Activated!");
-
-                if (monitorsToActivate != null)
-                    monitorsToActivate.SetActive(true);   // Show ScreenManager
-            }
-            else
-            {
-                Debug.Log("Wrong Sequence! Try Again.");
-                playerInput.Clear();
-            }
+            StartCoroutine(EvaluateSequence());
         }
     }
 
-    private bool IsCorrectSequence()
+    private IEnumerator EvaluateSequence()
     {
+        yield return new WaitForSeconds(0.3f); // slight delay for clarity
+
+        bool correct = true;
+
         for (int i = 0; i < correctSequence.Count; i++)
         {
-            if (playerInput[i] != correctSequence[i])
-                return false;
+            if (pressedButtons[i].buttonName != correctSequence[i])
+            {
+                correct = false;
+                break;
+            }
         }
-        return true;
+
+        Color resultColor = correct ? Color.green : Color.red;
+
+        foreach (var button in pressedButtons)
+        {
+            button.SetColor(resultColor);
+        }
+
+        if (correct && monitorsToActivate != null)
+        {
+            monitorsToActivate.SetActive(true);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        foreach (var button in pressedButtons)
+        {
+            button.ResetColor();
+        }
+
+        pressedButtons.Clear();
     }
 }

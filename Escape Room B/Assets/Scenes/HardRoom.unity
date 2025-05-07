@@ -13529,6 +13529,9 @@ MonoBehaviour:
   keypadCombo: 1738
   keypadDisplayText: {fileID: 581347448}
   panelMesh: {fileID: 1368951602}
+  levelSelectScene: LevelSelect
+  endScene: EndScreen
+  isHardRoom: 1
 --- !u!1001 &2107976600
 PrefabInstance:
   m_ObjectHideFlags: 0

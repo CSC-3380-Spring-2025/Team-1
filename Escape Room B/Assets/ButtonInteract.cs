@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ButtonInteract : MonoBehaviour
@@ -9,38 +7,25 @@ public class ButtonInteract : MonoBehaviour
 
     private Renderer rend;
     private Color originalColor;
-    public Color pressedColor = Color.yellow;  // When the button is clicked it should turn yellow
 
     void Start()
     {
         rend = GetComponent<Renderer>();
-
-        rend.material = new Material(rend.material);
+        rend.material = new Material(rend.material); // ensure unique material instance
         originalColor = rend.material.color;
     }
 
     private void OnMouseDown()
     {
-        if (puzzleManager != null)
-        {
-            puzzleManager.RegisterButtonPress(buttonName);
-            Debug.Log(buttonName + " clicked!");
-
-            rend.material.color = pressedColor;
-            Invoke("ResetColor", 0.5f);
-        }
+        puzzleManager.RegisterButtonPress(this);
     }
 
-    public void FlashColor(Color flashColor)
+    public void SetColor(Color color)
     {
-        rend.material.color = flashColor;
-        CancelInvoke("ResetColor");
-        Invoke("ResetColor", 0.5f);
-
-        Debug.Log(gameObject.name + " flashing color: " + flashColor); 
+        rend.material.color = color;
     }
 
-    void ResetColor()
+    public void ResetColor()
     {
         rend.material.color = originalColor;
     }

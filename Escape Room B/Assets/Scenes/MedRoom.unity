@@ -1662,7 +1662,6 @@ MonoBehaviour:
   - Butt4
   - Butt2
   monitorsToActivate: {fileID: 1015848498}
-  allButtons: []
 --- !u!1 &428241870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3059,7 +3058,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonName: Butt1
   puzzleManager: {fileID: 407640088}
-  pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!135 &705395749
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3101,7 +3099,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 87d3d99b8b652b547abd572a89524297, type: 2}
+  - {fileID: 2100000, guid: b730e8afe44554545a94361a20b042db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4037,7 +4035,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonName: Butt3
   puzzleManager: {fileID: 407640088}
-  pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!135 &866821630
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4079,7 +4076,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 87d3d99b8b652b547abd572a89524297, type: 2}
+  - {fileID: 2100000, guid: b730e8afe44554545a94361a20b042db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6007,7 +6004,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonName: Butt4
   puzzleManager: {fileID: 407640088}
-  pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!135 &1253795528
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6049,7 +6045,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 87d3d99b8b652b547abd572a89524297, type: 2}
+  - {fileID: 2100000, guid: b730e8afe44554545a94361a20b042db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7099,7 +7095,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonName: Butt2
   puzzleManager: {fileID: 407640088}
-  pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!135 &1392460486
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7141,7 +7136,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 87d3d99b8b652b547abd572a89524297, type: 2}
+  - {fileID: 2100000, guid: b730e8afe44554545a94361a20b042db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

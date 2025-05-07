@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class MatchPuzzleManager : MonoBehaviour
-{public static MatchPuzzleManager Instance;
+{
+    public static MatchPuzzleManager Instance;
 
-    public PodiumHoldPoint[] podiums; 
-    public GameObject keypadHintUI;  
-    public TMPro.TextMeshProUGUI codeText; 
-    public string codeToShow = "3452"; 
+    public PodiumHoldPoint[] podiums;         
+    public GameObject objectToActivate;       
+
+    private bool puzzleSolved = false;        
 
     void Awake()
     {
@@ -18,20 +18,18 @@ public class MatchPuzzleManager : MonoBehaviour
 
     public void CheckPuzzle()
     {
+        if (puzzleSolved) return;
+
         foreach (PodiumHoldPoint podium in podiums)
         {
             if (!podium.IsCorrect())
-                return; 
+                return;
         }
 
-        Debug.Log("Puzzle Solved!");
-        
-        if (keypadHintUI != null)
-        {
-            keypadHintUI.SetActive(true);
+        Debug.Log("All cubes placed correctly! Activating next object.");
+        puzzleSolved = true;
 
-            if (codeText != null)
-                codeText.text = "CODE: " + codeToShow;
-        }
+        if (objectToActivate != null)
+            objectToActivate.SetActive(true);
     }
 }

@@ -3058,7 +3058,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonName: Butt1
   puzzleManager: {fileID: 407640088}
-  pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!135 &705395749
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3100,7 +3099,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b730e8afe44554545a94361a20b042db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3653,7 +3652,6 @@ GameObject:
   - component: {fileID: 799787628}
   - component: {fileID: 799787627}
   - component: {fileID: 799787626}
-  - component: {fileID: 799787625}
   - component: {fileID: 799787624}
   m_Layer: 0
   m_Name: BlueC
@@ -3704,18 +3702,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &799787625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799787622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5accae1c567e4c419b4d1fad2b5058f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &799787626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4049,7 +4035,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonName: Butt3
   puzzleManager: {fileID: 407640088}
-  pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!135 &866821630
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4091,7 +4076,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b730e8afe44554545a94361a20b042db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5633,6 +5618,7 @@ Transform:
   - {fileID: 1838887582}
   - {fileID: 1576293645}
   - {fileID: 1798698429}
+  - {fileID: 1901360582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152356418
@@ -6018,7 +6004,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonName: Butt4
   puzzleManager: {fileID: 407640088}
-  pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!135 &1253795528
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6060,7 +6045,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b730e8afe44554545a94361a20b042db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7110,7 +7095,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonName: Butt2
   puzzleManager: {fileID: 407640088}
-  pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!135 &1392460486
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7152,7 +7136,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b730e8afe44554545a94361a20b042db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9305,6 +9289,111 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4ebaa1f9ba6ae3341b9e6bc74a1b8bfa, type: 3}
+--- !u!1 &1901360581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1901360582}
+  - component: {fileID: 1901360585}
+  - component: {fileID: 1901360584}
+  - component: {fileID: 1901360583}
+  m_Layer: 0
+  m_Name: Poster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1901360582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901360581}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -7.088, y: 7.7, z: -8.144}
+  m_LocalScale: {x: 1.9054, y: 1.1427, z: 0.03590455}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1140588773}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!65 &1901360583
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901360581}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1901360584
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901360581}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9babeac95f123a044a0d9cbe7d38ff3a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1901360585
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901360581}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1920195121
 GameObject:
   m_ObjectHideFlags: 0
@@ -9582,7 +9671,6 @@ GameObject:
   - component: {fileID: 1997111915}
   - component: {fileID: 1997111914}
   - component: {fileID: 1997111913}
-  - component: {fileID: 1997111912}
   - component: {fileID: 1997111911}
   m_Layer: 0
   m_Name: OrangeC
@@ -9633,18 +9721,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1997111912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997111909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5accae1c567e4c419b4d1fad2b5058f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1997111913
 BoxCollider:
   m_ObjectHideFlags: 0

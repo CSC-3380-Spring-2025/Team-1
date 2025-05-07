@@ -3,20 +3,20 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class JarSwitch : MonoBehaviour
 {
-    [Tooltip("Assign the Light component from each of your 7 jar GameObjects here")]
+    //give us the 7 jars in the inspector tab
     [SerializeField] private Light[] jarLights = new Light[7];
 
     private bool lightsOn = false;
 
     private void Start()
     {
-        // Ensure they start off
+        // makes sure they start off
         SetLights(false);
     }
 
     private void OnMouseDown()
     {
-        // Flip state
+        // turns the jars on
         lightsOn = !lightsOn;
         SetLights(lightsOn);
     }

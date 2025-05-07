@@ -12,10 +12,6 @@ public class PhysicsObject : MonoBehaviour
         {
             Debug.LogError("Rigidbody not found on " + gameObject.name);
         }
-
-        // Optional: Make sure gravity is enabled
         rb.useGravity = true;
     }
-
-    // Remove Update unless you need custom forces
 }

@@ -4,11 +4,12 @@ using UnityEngine;
 [RequireComponent(typeof(Light))]
 public class LEDBlinker : MonoBehaviour
 {
-    [Tooltip("Blink interval in seconds")]
+    //sets the time between blinks
     [SerializeField] private float blinkInterval = 0.5f;
 
     private Light _light;
 
+    
     void Awake()
     {
         _light = GetComponent<Light>();
@@ -16,9 +17,10 @@ public class LEDBlinker : MonoBehaviour
 
     void Start()
     {
+        //starts the blinking loop
         StartCoroutine(BlinkRoutine());
     }
-
+    //keeps it going forever 
     private IEnumerator BlinkRoutine()
     {
         while (true)

@@ -17,7 +17,18 @@ Designs: [https://docs.google.com/document/d/1NB317U4qpfWN83_A6R6dB8dCiDFkd0dvMB
 Styles Guide(s): [https://docs.google.com/document/d/1n3l-s6jUMMfYgy5I1-d6YqGs1uIhsCxDXfUabCLv3yU/edit?usp=sharing]\
 
 # How to Run Dev and Test Environment
-...
+- Run Git Clone command on git (by defulat it will make it in your user folder, if you want it in another folder make sure to make a new derectory in your command)
+- Open Unity Hub, and click add from disk
+- Locate your github file, wherever you saved it, and select Team 1 folder to run 
+- Once you ckick on File 1 you shuld see Escape B on your Unity Hub screen under your project, click it
+- Once you have Escape B open, go to file and then click build settings
+- After build settings is open, make sure that the scene order is Main Menu, Instructons, Level Select, Easy Room, Medium Room, and Hard Room (In that order))
+- Also Make sure that sticky notes/stickynotes/scenes/samplescenes is unchecked
+- If any of the scenes are out of order simply drag them into the correct order
+- Once they are in the correct order all you need to do is press build and run
+- This should automaticity build and then open the game in a new window for you to play. 
+
+   
 ## Dependencies
 - Unity Hub 3.11.1
 - Unity 2022.3.41f1

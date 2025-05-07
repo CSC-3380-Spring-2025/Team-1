@@ -8,10 +8,15 @@ public class CreditsManager : MonoBehaviour
 
     void Start()
     {
+        // Make the cursor visible
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        // Add listener for the replay game button
         replayButton.onClick.AddListener(ReturnToMainMenu);
     }
 
-//just returns to main menu after game is finished
+    // Just returns to main menu after game is finished
     private void ReturnToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");

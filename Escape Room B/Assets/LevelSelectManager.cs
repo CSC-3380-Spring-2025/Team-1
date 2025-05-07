@@ -10,19 +10,43 @@ public class LevelSelectManager : MonoBehaviour
 
     void Start()
     {
-        
+        // makes the cursor visible and unlocked in the Level Select scene
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+       
         easyButton.interactable = true;
-        medButton.interactable = PlayerPrefs.GetInt("EasyRoomCompleted", 0) == 1;
-        hardButton.interactable = PlayerPrefs.GetInt("MedRoomCompleted", 0) == 1;
+        medButton.interactable = true;
+        hardButton.interactable = true;
     }
 
-    public void LoadEasyRoom()  { LoadScene("EasyRoom"); }
-    public void LoadMedRoom()   { LoadScene("MedRoom"); }
-    public void LoadHardRoom()  { LoadScene("HardRoom"); }
+    public void LoadEasyRoom()  
+    { 
+        LockCursor(); 
+        LoadScene("EasyRoom"); 
+    }
 
+    public void LoadMedRoom()   
+    { 
+        LockCursor(); 
+        LoadScene("MedRoom"); 
+    }
+
+    public void LoadHardRoom()  
+    { 
+        LockCursor(); 
+        LoadScene("HardRoom"); 
+    }
 
     private void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    private void LockCursor()
+    {
+        // Hide and locks the cursor when entering a room
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

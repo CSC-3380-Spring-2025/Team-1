@@ -2,10 +2,12 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Keypad : MonoBehaviour
 {
     public static Keypad Instance { get; private set; }
+
 
     [Header("Events")]
     //passcode on keypad is right
@@ -19,6 +21,11 @@ public class Keypad : MonoBehaviour
     [Header("Display and Colors")]
     [SerializeField] private TMP_Text keypadDisplayText;  
     [SerializeField] private Renderer panelMesh;
+
+    [Header("Scene Settings")]
+    [SerializeField] private string levelSelectScene = "LevelSelect";
+    [SerializeField] private string endScene = "EndScreen";
+    [SerializeField] private bool isHardRoom = false;
 
     //this is the string associated with the passcode as its being typed by the player
     private string currentInput;
@@ -101,6 +108,16 @@ public class Keypad : MonoBehaviour
             keypadDisplayText.text = "Granted";
         }
         onAccessGranted?.Invoke();
+
+        // Load the appropriate scene based on the room difficulty
+        if (isHardRoom)
+        {
+            SceneManager.LoadScene(endScene);
+        }
+        else
+        {
+            SceneManager.LoadScene(levelSelectScene);
+        }
     }
 
     //clears input for new use

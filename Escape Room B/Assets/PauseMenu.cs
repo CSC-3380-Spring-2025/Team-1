@@ -6,11 +6,13 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     private bool isPaused = false;
 
+//starts with the panel turned off
     void Start()
     {
         pauseMenuUI.SetActive(false); 
     }
 
+//panel pulls up when esc button is clicked
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -31,6 +33,7 @@ public class PauseMenu : MonoBehaviour
     Cursor.visible = false;
 }
 
+//locks cursor
 public void Pause()
 {
     pauseMenuUI.SetActive(true);
@@ -40,6 +43,7 @@ public void Pause()
     Cursor.visible = true;
 }
 
+//returns to mainmenu
 public void ReturnGame()
 {
     Time.timeScale = 1f;

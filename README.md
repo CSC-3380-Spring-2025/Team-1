@@ -6,50 +6,30 @@ Git Master: [Clark Ridenhour] ([criden])\
 Design Lead: [Gracielle Perez] ([GraciellePerez])\
 Quality Assurance Tester: [Samone Stanley] ([samone-crtl])\
 
-# About Our Software
+# About Our Game
+Escape the Experiment (Escape Room B)  is a first person, puzzle and clue based escape room game. Players have to figure out how to get out of there guided only by notes and scientific clues they must navigate through three rooms, packed with puzzles and hidden messages to uncover the truth behind the facility and escape before time runs out.
 
-Describe a little about what the project is about here.
 ## Platforms Tested on
-- MacOS
-- Android
-- iOS
-- Linux
-- Windows
+-Unity
 # Important Links
-Kanban Board: [link]\
-Designs: [link]\
-Styles Guide(s): [link]
+Kanban Board: [https://rkashimawo.atlassian.net/jira/software/projects/OPS/boards/1]\
+Designs: [https://docs.google.com/document/d/1NB317U4qpfWN83_A6R6dB8dCiDFkd0dvMBXXfVbMLmc/edit?tab=t.0]\
+Styles Guide(s): [https://docs.google.com/document/d/1n3l-s6jUMMfYgy5I1-d6YqGs1uIhsCxDXfUabCLv3yU/edit?usp=sharing]\
 
 # How to Run Dev and Test Environment
-
+...
 ## Dependencies
-- List all dependencies here
-- Don't forget to include versions
+- Unity Hub 3.11.1
+- Unity 2022.3.41f1
 ### Downloading Dependencies
-Describe where to download the dependencies here. Some will likely require a web download. Provide links here. For IDE extensions, make sure your project works with the free version of them, and detail which IDE(s) these are available in. 
+- Go to the unity website (https://unity.com)
+- Hover over the Products tab at the top and click the Engine tab
+- Once you are on that page click download and you will be transported to a page that will let you downlad the file based on what device you have
+- Follow their instcutions on their page, by downloading the hub and engine 
 
 ## Commands
 Describe how the commands and process to launch the project on the main branch in such a way that anyone working on the project knows how to check the affects of any code they add.
 
 ```sh
-Example terminal command syntax
-```
-
-It is very common in these sections to see code in peculiar boxes to help them stand out. Check the markdown section of the Project Specifications to see how to add more / customize these.
-
-```python
-def code_highlight_example(m: int, m: float, s: str) -> str:
-	return s + str(n*m)
-```
-
-```java
-public static void main(String[] args){
-	System.out.println("Hello, World!");
-}
-```
-
-```c#
-static void Main(){
-	Console.WriteLine("Hello, World!");
-}
+git clone https://github.com/CSC-3380-Spring-2025/Team-1
 ```
